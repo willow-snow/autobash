@@ -10,7 +10,7 @@ sudo echo ""
 sudo echo "|-----------------------------------------------------------------------------------------------------------------------------|"
 sudo echo "|Make sure you have a LAMP stack installed before running this! You can find one at the same place you downloaded this script!|"
 sudo echo "|http://github.com/nicememedude/autobash                                                                                      |"                                                           |"
-sudo echo "|This script will install the following automatically: unzip, git                                                             |"
+sudo echo "|This script will install the following automatically: unzip                                                                  |"
 sudo echo "|-----------------------------------------------------------------------------------------------------------------------------|"
 while true; do
     read -p "Do you have Apache and PHP installed? [Y/N] " yn
@@ -27,7 +27,6 @@ while true; do
 done
 apt-get -qq update
 apt-get -qq -y install unzip
-apt-get -qq -y install git
 sudo echo "Downloading ShareX upload script base"
 wget --quiet -O /var/www/html/upload.zip https://raw.githubusercontent.com/nicememedude/autobash/master/noneedtodl/u.zip 
 sudo unzip -qq /var/www/html/upload.zip -d /var/www/html/
