@@ -19,7 +19,7 @@ while true; do
         [Nn]* ) sudo apt-get -qq -y install apache2 php5 libapache2-mod-php5
                 sudo rm /etc/apache2/mods-enabled/dir.conf
                 sudo chmod 777 -R /var/www/
-                sudo wget --quiet -O /etc/apache2/mods-enabled/dir.conf https://github.com/nicememedude/autobashfiles/raw/master/dirlamp.conf
+                sudo wget --quiet -O /etc/apache2/mods-enabled/dir.conf https://raw.githubusercontent.com/nicememedude/autobash/master/noneedtodl/dirlamp.conf
                 sudo service apache2 restart
                 sudo echo "Apache and PHP installed successfully!"
 		break;;
