@@ -19,7 +19,7 @@ while true; do
         [Nn]* ) sudo apt-get -qq -y install apache2 php5 libapache2-mod-php5
                 sudo rm /etc/apache2/mods-enabled/dir.conf
                 sudo chmod 777 -R /var/www/
-                sudo wget --quiet -O /etc/apache2/mods-enabled/dir.conf https://raw.githubusercontent.com/nicememedude/autobash/master/noneedtodl/dirlamp.conf
+                sudo wget --quiet -O /etc/apache2/mods-enabled/dir.conf https://github.com/nicememedude/autobashfiles/raw/master/dirlamp.conf
                 sudo service apache2 restart
                 sudo echo "Apache and PHP installed successfully!"
 		break;;
@@ -28,7 +28,7 @@ done
 apt-get -qq update
 apt-get -qq -y install unzip
 sudo echo "Downloading ShareX upload script base"
-wget --quiet -O /var/www/html/upload.zip https://raw.githubusercontent.com/nicememedude/autobash/master/noneedtodl/u.zip 
+wget --quiet -O /var/www/html/upload.zip https://github.com/nicememedude/autobashfiles/raw/master/u.zip 
 sudo unzip -qq /var/www/html/upload.zip -d /var/www/html/
 sudo echo "Type the SECRET KEY you want to use, followed by [ENTER]:"
 read secretkey
