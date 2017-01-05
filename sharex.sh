@@ -28,7 +28,7 @@ done
 apt-get -qq update
 apt-get -qq -y install unzip
 sudo echo "Downloading ShareX upload script base"
-wget --quiet -O /var/www/html/upload.zip https://github.com/nicememedude/autobashfiles/raw/master/u.zip 
+wget --quiet -O /var/www/html/upload.zip https://github.com/nicememedude/autobash/raw/master/noneedtodl/u.zip 
 sudo unzip -qq /var/www/html/upload.zip -d /var/www/html/
 sudo echo "Type the SECRET KEY you want to use, followed by [ENTER]:"
 read secretkey
